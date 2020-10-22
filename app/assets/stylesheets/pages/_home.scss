@@ -1,1 +1,46 @@
 // Specific CSS for your home-page
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  height: 350px;
+}
+.banner h1{ 
+  color: $white;
+  text-shadow: 1px 1px 2px $black;
+}
+.container {
+  padding: 0;
+}
+
+/* Cards */
+
+.cards {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 300px;
+  border-radius: 6px;
+  padding: 5px;
+}
+.card-img > img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  padding-bottom: 10px;
+}
+.card-title h3 {
+  margin-top: 10px;
+  color: $blue;
+  text-align: center;
+  font-weight: bold;
+}
+.card-title p {
+  margin-top: 20px;
+  color: $gray;
+  text-align: center;
+}
