@@ -1,30 +1,35 @@
 .navbar-mlc {
   justify-content: space-between;
-  background: white;
+  background: $blue;
 }
 .navbar-mlc .navbar-brand img {
-  width: 70px;
+  width: 90px;
+}
+body > div.navbar.navbar-expand-sm.navbar-light.navbar-mlc {
+  padding: 0;
 }
 
 .navbar-mlc .navbar-collapse {
   flex-grow: 0;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: $blue;
+  color: $white;
   &:hover {
-    color: $blue;
+    color: $white;
     font-size: 20px;
   }
 }
 
 .navbar-mlc .btn-light {
-  color: $white;
+  color: $blue;
   border-color: $white;
-  background-color: $blue;
+  background-color: $white;
+  // box-shadow: 3px 1px 1px $blue;
   &:hover {
-    color: $blue;
-    border-color: $blue;
-    background-color: $white;
+    color: $white;
+    border-color: $white;
+    background-color: $blue;
+    // box-shadow: 3px 1px 1px $blue;
   }
 }
 
