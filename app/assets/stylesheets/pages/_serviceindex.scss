@@ -1,0 +1,48 @@
+.servpagetitle {
+  color: $blue;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px $blue;
+  text-align: center;
+}
+
+.nav-tabs .nav-link.active {
+  color: $white;
+  background-color: $blue;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: transparent;
+}
+#home-tab, #profile-tab {
+  font-size: 24px;
+  text-shadow: 1px 1px 2px $white;
+}
+.nav-tabs .nav-link {
+  color: $blue;
+  background-color: $white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: transparent;
+}
+
+.tab-pane.fade.show.active {
+  color: $white;
+  background-color: $blue;
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  & li {
+    // list-style: none;
+    line-height: 50px;
+    font-size: 18px;
+  }
+}
+.tab-content {
+  max-width: 800px;
+  
+}
+.nav-tabs {
+  max-width: 800px;
+  border: transparent;
+}

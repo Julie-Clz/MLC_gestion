@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="servpagetitle"><h1><strong>Nos services</strong> <i class="far fa-folder-open"></i></h1></div>
+  <br>
+
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <% @services.each_with_index do |service, index| %>
+      <% if index == 0 %>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#service-<%= service.id %>" role="tab" aria-controls="serice-<%= service.id %>" aria-selected="true"><%= service.name %></a>
+        </li>
+      <% else %>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#service-<%= service.id %>" role="tab" aria-controls="service-<%= service.id %>" aria-selected="false"><%= service.name %></a>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <% @services.each_with_index do |service, index| %>
+      <% if index == 0 %>
+        <div class="tab-pane fade show active" id="service-<%= service.id %>" role="tabpanel" aria-labelledby="home-tab">
+          <ul>
+            <% service.tasks.each do |task| %>
+              <li><%= task.content %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% else %>
+        <div class="tab-pane fade" id="service-<%= service.id %>" role="tabpanel" aria-labelledby="home-tab">
+          <ul>
+            <% service.tasks.each do |task| %>
+              <li><%= task.content %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+
+</div>

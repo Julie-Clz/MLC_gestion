@@ -2,6 +2,7 @@ class ServicesController < ApplicationController
 
   def index
     @services = Service.all
+    @tasks = Task.all
   end
   
   def show
