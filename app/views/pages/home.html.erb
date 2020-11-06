@@ -15,13 +15,14 @@
       <div class="card">
         <div class="card-img">
         <% if service.photo.attached? %>
-          <%= image_tag service.photo, height: 300, width: 400, crop: :fill %>
-          <% end %>
+          <%= cl_image_tag service.photo.key %>
+        <% end %>
         </div>
         <div class="card-title">
-          <h3> <%= service.name.capitalize %></h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h3 class= "servicetitle"> <%= service.name.capitalize %></h3>
+          <p> <%= service.description %></p>
         </div>
+        <div class="linkservice" ><a href="#">En savoir plus</a></div>
       </div>
     <% end %>
 
