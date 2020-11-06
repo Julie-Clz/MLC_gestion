@@ -25,6 +25,9 @@
   width: 300px;
   border-radius: 6px;
   padding: 5px;
+  a:hover {
+    text-decoration: none;
+  }
 }
 .card-img > img{
   height: 200px;
@@ -47,11 +50,25 @@
   color: $gray;
   text-align: center;
 }
-.linkservice {
-  text-align: center;
-  padding-bottom: 5px;
-  a:hover {
-    text-decoration: none;
-    font-weight: bold;
+.linkservice a{
+    color: transparent;
+}
+
+@media (hover: hover) {
+  .card .linkservice {
+    transform: translateY(-100px);
+    transition: 0.2s;
+  }
+  .card:hover .linkservice {
+    transform: translateY(0);
+    text-align: center;
+    padding-bottom: 5px;
+    a {
+      color: $blue;
+      font-weight: bold;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }

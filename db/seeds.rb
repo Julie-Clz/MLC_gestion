@@ -15,17 +15,17 @@ Service.destroy_all
 
 puts "creating services..."
 
-service_one = Service.create(name: "Comptabilité", description: "MLCI prend en charge votre comptabilité et fait le lien avec l'expert comptable")
+service_one = Service.create(name: "Comptabilité", description: "Nous tenons votre comptabilité et faisons le lien avec l'expert comptable")
 file = URI.open('https://res.cloudinary.com/dl8y1oay0/image/upload/v1604505631/compta_pwpk9s.jpg')
 service_one.photo.attach(io: file, filename: 'compta_pwpk9s.jpg', content_type: 'image/jpg')
 service_one.save!
 
-service_two = Service.create(name: "Suivi des ventes", description:"MLCI gère votre facturation clients et met en place des indicateurs de suivi")
+service_two = Service.create(name: "Suivi des ventes", description:"Nous gérons votre facturation clients et mettons en place des indicateurs de suivi")
 file = URI.open('https://res.cloudinary.com/dl8y1oay0/image/upload/v1604505637/invoice_ku8slc.jpg')
 service_two.photo.attach(io: file, filename: 'invoice_ku8slc.jpg', content_type: 'image/jpg')
 service_two.save!
 
-service_three = Service.create(name: "Gestion administrative", description: "MLCI s'occupe de vos démarches administratives et assure leur suivi")
+service_three = Service.create(name: "Gestion administrative", description: "Nous nous occupons de vos démarches administratives et assurons leur suivi")
 file = URI.open('https://res.cloudinary.com/dl8y1oay0/image/upload/v1604505646/secretariat_ruwc4n.jpg')
 service_three.photo.attach(io: file, filename: 'secretariat_ruwc4n.jpg', content_type: 'image/jpg')
 service_three.save!

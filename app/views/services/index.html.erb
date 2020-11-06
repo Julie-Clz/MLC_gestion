@@ -6,7 +6,7 @@
     <% @services.each_with_index do |service, index| %>
       <% if index == 0 %>
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#service-<%= service.id %>" role="tab" aria-controls="serice-<%= service.id %>" aria-selected="true"><%= service.name %></a>
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#service-<%= service.id %>" role="tab" aria-controls="service-<%= service.id %>" aria-selected="true"><%= service.name %></a>
         </li>
       <% else %>
         <li class="nav-item" role="presentation">

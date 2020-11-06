@@ -12,6 +12,7 @@
   <div class="cards">
 
     <% @services.each do |service| %>
+      <%= link_to services_path, data: { turbolinks: 'false' }, target: "_blank" do %>
       <div class="card">
         <div class="card-img">
         <% if service.photo.attached? %>
@@ -20,30 +21,12 @@
         </div>
         <div class="card-title">
           <h3 class= "servicetitle"> <%= service.name.capitalize %></h3>
-          <p> <%= service.description %></p>
+          <p> <%= service.description %>.</p>
         </div>
-        <div class="linkservice" ><a href="services#service-<%= service.id %>">En savoir plus</a></div>
+        
+        <div class="linkservice" ><%= link_to 'En savoir plus', services_path(anchor: "service-#{service.id}"), target: "_blank" %></div>
       </div>
     <% end %>
-
-    
-
+    <% end %>
   </div>
 </div>
-
-<%# <div class="wrapper">
-  <div class="tile job-bucket">
-    <div class="front">
-      <div class="contents"> %>
-       <%#= image_tag "compta.jpg", class:"logo" %>
-        <%# <h3>Comptabilité</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <br>
-        <a href="#">En savoir plus</a>
-      </div>
-    </div>
-    <div class="back">
-      <a href="#">En savoir plus</a>
-    </div>
-  </div>
-</div> %>

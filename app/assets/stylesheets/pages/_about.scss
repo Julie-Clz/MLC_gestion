@@ -1,0 +1,60 @@
+.abouttitle {
+  color: $blue;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px $blue;
+  text-align: center;
+}
+
+.company {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.aboutlogo img {
+  width: 300px;
+}
+.aboutcontent {
+  color: $gray;
+  text-align: justify;
+  span {
+    font-weight: bold;
+    color: $blue;
+  }
+}
+
+.creator {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.aboutquote {
+  display: flex;
+  width: 400px;
+  color: $gray;
+  text-align: justify;
+  font-style: italic;
+  p {
+    padding-left: 20px;
+  }
+}
+.quoteright {
+display: flex;
+align-items: right;
+align-self: flex-end;
+}
+.aboutimg img {
+  display: flex;
+  border-radius: 10px;
+  width: 200px;
+  margin-left: 50px;
+}
+.quoteauthor {
+  color: $gray;
+  padding-left: 50px;
+  padding-top: 20px;
+  font-style: italic;
+}
