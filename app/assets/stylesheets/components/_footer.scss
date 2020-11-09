@@ -20,7 +20,12 @@
     font-size: 30px;
   }
 }
-
+.conditions a {
+  color: $white;
+  &:hover {
+    font-weight: bold;
+  }
+}
 .footer-copyright, .footer-copyright a {
   color: $white;
   text-decoration: none;

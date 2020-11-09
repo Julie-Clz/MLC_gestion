@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
   get '/about', action: :about, controller: 'pages'
-
+  get '/cgv', action: :cgv, controller: 'pages'
+  
   resources :services
   resources :contacts, only: [:new, :create]
  
