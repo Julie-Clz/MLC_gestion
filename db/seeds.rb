@@ -74,7 +74,7 @@ task_ten = Task.create(content: "Relance clients")
 task_ten.service = service_two
 task_ten.save!
 
-task_eleven = Task.create(content: "Dématérialisation des documents commerciaux (factures, devis, contrats, relances)")
+task_eleven = Task.create(content: "Dématérialisation des documents commerciaux (factures, devis, contrats, relances)  ")
 task_eleven.service = service_two
 task_eleven.save!
 
@@ -102,7 +102,7 @@ task_seventeen = Task.create(content: "Gestion des notes de frais")
 task_seventeen.service = service_three
 task_seventeen.save!
 
-task_eighteen = Task.create(content: "Organisation de vos déplacements (transports, restauration et hébergement)")
+task_eighteen = Task.create(content: "Organisation de vos déplacements (transports, restauration et hébergement)  ")
 task_eighteen.service = service_three
 task_eighteen.save!
 
