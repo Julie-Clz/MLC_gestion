@@ -8,5 +8,9 @@ class PagesController < ApplicationController
 
   def cgv
   end
+
+  def contact
+  end
+  
   
 end
