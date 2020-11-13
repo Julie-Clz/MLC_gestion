@@ -31,4 +31,13 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  $(function(){
+    var hash = window.location.hash;
+    hash && $('ul.nav.nav-tabs a[href="' + hash + '"]').tab('show'); 
+    $('ul.nav.nav-tabs a').click(function (e) {
+       $(this).tab('show');
+       var scrollmem = $('body').scrollTop();
+       window.location.hash = this.hash;
+    });
+  });
 });
