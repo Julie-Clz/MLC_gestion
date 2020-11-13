@@ -9,12 +9,18 @@
         <%= f.input :last_name, :label => "Votre nom", :placeholder => "Dupond", :required => true, :autofocus => true %>
       </div>
 
+      <%= f.input :address, :label => "Votre adresse", :placeholder => "10 rue Leclerc, 92800 ORSAY", :autofocus => true %>
+
       <div class="d-flex flex-row justify-content-between">
         <%= f.input :telefon, as: :tel, :label => "Votre téléphone", :placeholder => "0610101010", :autofocus => true %>
         <%= f.input :email, as: :email, :label => "Votre email", :placeholder => "mdupond@gmail.com", :required => true, :autofocus => true %>
       </div>
+       
+      <%= f.input :contact_method, :label => "Je préfére être contacté par:", :collection => ['Téléphone', 'Email'], :as => :radio_buttons, :autofocus => true %>
+      
+      <%= f.input :company_description, as: :text, :label => "Votre entreprise", :placeholder => "Statut, nombre de salariés, domaine d'activité etc.", :autofocus => true %>
 
-      <%= f.input :message, collection: ["Devis", "Devis: Comptabilité", "Devis: Suivi des ventes", "Devis: Gestion administrative"], :label => "Objet", :required => true, :autofocus => true %>
+      <%= f.input :object, collection: ["Devis", "Devis: Comptabilité", "Devis: Suivi des ventes", "Devis: Gestion administrative"], :label => "Objet", :required => true, :autofocus => true %>
       <%= f.input :message, as: :text, :label => "Votre message", :placeholder => "Votre message", :required => true, :autofocus => true %>
     
       <div class="hidden">
