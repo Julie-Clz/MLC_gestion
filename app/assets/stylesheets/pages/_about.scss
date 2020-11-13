@@ -5,7 +5,13 @@
   text-shadow: 1px 1px 3px $blue;
   text-align: center;
 }
-
+.aboutcontent > p > a {
+  color: $gray;
+  &:hover {
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
 .company {
   display: flex;
   justify-items: center;
@@ -36,7 +42,7 @@
 }
 .aboutquote {
   display: flex;
-  width: 400px;
+  width: 600px;
   color: $gray;
   text-align: justify;
   font-style: italic;
@@ -48,6 +54,10 @@
 display: flex;
 align-items: right;
 align-self: flex-end;
+// color: $blue;
+}
+.quoteleft {
+  // color: $blue;
 }
 .aboutimg img {
   display: flex;
