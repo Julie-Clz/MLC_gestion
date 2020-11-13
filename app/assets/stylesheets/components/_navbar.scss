@@ -15,9 +15,10 @@ body > div.navbar.navbar-expand-sm.navbar-light.navbar-mlc {
 }
 .navbar-light .navbar-nav .nav-link {
   color: $white;
+  font-size: 20px;
   &:hover {
     color: $white;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -25,11 +26,13 @@ body > div.navbar.navbar-expand-sm.navbar-light.navbar-mlc {
   color: $blue;
   border-color: $white;
   background-color: $white;
+  font-size: 20px;
   // box-shadow: 3px 1px 1px $blue;
   &:hover {
     color: $white;
     border-color: $white;
     background-color: $blue;
+    font-size: 24px;
     // box-shadow: 3px 1px 1px $blue;
   }
 }
