@@ -17,7 +17,7 @@
 
 .cards {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -25,6 +25,11 @@
   width: 300px;
   border-radius: 6px;
   padding: 5px;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
   a:hover {
     text-decoration: none;
   }
@@ -50,25 +55,50 @@
   color: $gray;
   text-align: center;
 }
-.linkservice a{
-    color: transparent;
+.card .linkservice {
+  text-align: center;
+  padding-bottom: 5px;
+  justify-content: end;
+  a {
+    color: transparent$blue;
+    font-weight: bold;
+  }
 }
 
-@media (hover: hover) {
-  .card .linkservice {
-    transform: translateY(-100px);
-    transition: 0.2s;
-  }
-  .card:hover .linkservice {
-    transform: translateY(0);
-    text-align: center;
-    padding-bottom: 5px;
-    a {
-      color: $blue;
-      font-weight: bold;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
+// @media (hover: hover) {
+//   .card .linkservice {
+//     transform: translateY(-100px);
+//     transition: 0.2s;
+//   }
+//   .card:hover .linkservice {
+//     transform: translateY(0);
+//     text-align: center;
+//     padding-bottom: 5px;
+//     a {
+//       color: $blue;
+//       font-weight: bold;
+//       &:hover {
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+.customers {
+  margin-bottom: 80px;
+}
+.servpagetitle.cust-title {
+  padding-top: 50px;
+  border-top: 2px solid $blue;
+  margin-bottom: 50px;
+}
+.custom-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo_auto {
+  width: 200px;
+}
+.logo_itsara {
+  width: 200px;
 }
