@@ -3,7 +3,7 @@
   <br>
 
   <div class="contactform">
-    <%= simple_form_for @quotation, remote: :true do |f| %>
+    <%= simple_form_for @quotation, data: { turbolinks: 'false' }  do |f| %>
       <div class="d-flex flex-row justify-content-between">
         <%= f.input :first_name, :label => "Votre prénom", :placeholder => "Marie", :required => true, :autofocus => true %>
         <%= f.input :last_name, :label => "Votre nom", :placeholder => "Dupond", :required => true, :autofocus => true %>

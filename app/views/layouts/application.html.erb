@@ -30,12 +30,13 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
+  <body>
     <%= render 'shared/navbar' %>
 
-    <div class="<%= "retour" unless (controller.controller_name == "pages" && controller.action_name == "home") %>">
-    <i class="fas fa-caret-left"></i><%= link_to " Retour", root_path, class: "btn-retour", data: { turbolinks: 'false' } %></div>
-
+    <% unless current_page?(root_path) %>
+      <div class="retour">
+        <i class="fas fa-caret-left"></i><%= link_to " Retour", root_path, class: "btn-retour", data: { turbolinks: 'false' } %></div>
+    <% end %>
     <%= yield %>
       
     
