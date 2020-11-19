@@ -3,7 +3,7 @@
   <br>
 
   <div class="contactform">
-    <%= simple_form_for @quotation do |f| %>
+    <%= simple_form_for @quotation, remote: :true do |f| %>
       <div class="d-flex flex-row justify-content-between">
         <%= f.input :first_name, :label => "Votre prénom", :placeholder => "Marie", :required => true, :autofocus => true %>
         <%= f.input :last_name, :label => "Votre nom", :placeholder => "Dupond", :required => true, :autofocus => true %>
@@ -16,7 +16,7 @@
         <%= f.input :email, as: :email, :label => "Votre email", :placeholder => "mdupond@gmail.com", :required => true, :autofocus => true %>
       </div>
        
-      <%= f.input :contact_method, :label => "Je préfére être contacté par:", :collection => ['Téléphone', 'Email'], :as => :radio_buttons, :autofocus => true %>
+      <%= f.input :contact_method, :label => "Je préfére être contacté par:", :collection => ['Téléphone', 'Email'], :as => :radio_buttons, :radio_style => :inline, :autofocus => true %>
       
       <%= f.input :company_description, as: :text, :label => "Votre entreprise", :placeholder => "Statut, nombre de salariés, domaine d'activité etc.", :autofocus => true %>
 

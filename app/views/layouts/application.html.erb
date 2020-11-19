@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MLC Gestion</title>
+    <title><%= meta_title %></title>
+    <%= favicon_link_tag "favicon.ico" %>
+    <meta name="description" content="<%= meta_description %>">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
+    <meta property="og:description" content="<%= meta_description %>" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
+
+    <!-- Twitter Card data -->
+    <%# <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>
+    <%# <meta name="twitter:title" content="<%= meta_title %>
+    <%# <meta name="twitter:description" content="<%= meta_description %>
+    <%# <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>
+    <%# <meta name="twitter:image:src" content="<%= meta_image %>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,10 +30,14 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
     <%= render 'shared/navbar' %>
 
+    <div class="<%= "retour" unless (controller.controller_name == "pages" && controller.action_name == "home") %>">
+    <i class="fas fa-caret-left"></i><%= link_to " Retour", root_path, class: "btn-retour", data: { turbolinks: 'false' } %></div>
+
     <%= yield %>
+      
     
     <%= render 'shared/footer' %>
   </body>

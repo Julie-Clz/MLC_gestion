@@ -1,0 +1,5 @@
+meta_product_name: "MLCI"
+meta_title: "MLCI - gestion administrative"
+meta_description: "Aide les entreprises à gérer leurs tâches administratives et comptables pour leur faire gagner du temps et de l'argent."
+meta_image: "big_logoblue.png" # should exist in `app/assets/images/`
+# twitter_account: "@product_twitter_account"   # required for Twitter Cards

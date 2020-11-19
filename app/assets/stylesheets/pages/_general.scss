@@ -1,0 +1,11 @@
+.retour {
+  color: $blue;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 16px;
+  opacity: 0.8;
+  a:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
+}
