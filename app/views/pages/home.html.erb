@@ -24,7 +24,7 @@
         </div>
         <div class="card-title">
           <h3 class= "servicetitle"> <%= service.name.capitalize %></h3>
-          <p> <%= service.description %>.</p>
+          <p><%= service.description %>.</p>
         </div>
         <div class="linkservice" ><%= link_to 'En savoir plus', services_path(anchor: "service-#{service.id}") %></div>
       </div>
@@ -35,8 +35,8 @@
   <div class="customers">
     <div class="servpagetitle cust-title"><h1><strong>Ils nous font confiance</strong></h1></div>
     <div class="custom-logo">
-    <a href="https://itsara-conseil.com", target="_blank"><%= image_tag "itsara_logo.png", class:"logo_itsara"%></a>
-    <a href="https://g.page/technique-autos-services?share", target="_blank"><%= image_tag "auto_logo.png", class:"logo_auto" %></a>
+      <a href="https://itsara-conseil.com", target="_blank"><%= image_tag "itsara_logo.png", class:"logo_itsara"%></a>
+      <a href="https://g.page/technique-autos-services?share", target="_blank"><%= image_tag "auto_logo.png", class:"logo_auto" %></a>
     </div>
   <br>
   </div>
