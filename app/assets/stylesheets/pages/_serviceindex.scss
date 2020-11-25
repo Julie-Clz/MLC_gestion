@@ -5,6 +5,31 @@
   text-shadow: 1px 1px 3px $blue;
   text-align: center;
 }
+.servpagedescription {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+.calltoaction {
+  width: fit-content;
+  margin: 30px auto;
+  margin-bottom: 40px;
+  a {
+    color: $white;
+    border-color: $blue;
+    background-color: $blue;
+    font-size: 20px;
+  // box-shadow: 3px 1px 1px $blue;
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+    background-color: $white;
+    // font-size: 24px;
+    // box-shadow: 3px 1px 1px $blue;
+  }
+  }
+}
 
 .nav-tabs .nav-link.active {
   color: $white;
@@ -33,7 +58,7 @@
   border-radius: 4px;
   border-top-left-radius: 0px;
   padding-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding-right: 10px;
   & li {
     list-style: none;

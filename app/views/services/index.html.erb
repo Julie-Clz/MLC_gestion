@@ -2,6 +2,15 @@
   <div class="servpagetitle"><h1><strong>Nos services</strong> <i class="far fa-folder-open"></i></h1></div>
   <br>
 
+  <div class="servpagedescription">
+    <p>Toutes nos prestations sont proposées sur mesure afin de s'adapter à vos besoins
+    tout en respectant nos valeurs. <br>Votre satisfaction est notre priorité.</p>
+  </div>
+
+  <div class="calltoaction">
+    <%= link_to "Demandez votre devis", new_quotation_path, data: { turbolinks: 'false' }, class: "btn btn-light rounded-pill btn-space services" %>
+  </div>
+
   <div class="folder">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <% @services.each_with_index do |service, index| %>
