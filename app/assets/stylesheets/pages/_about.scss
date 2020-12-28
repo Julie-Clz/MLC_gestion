@@ -62,7 +62,7 @@ align-self: flex-end;
 .aboutimg img {
   display: flex;
   border-radius: 10px;
-  width: 200px;
+  width: 250px;
   margin-left: 50px;
 }
 .quoteauthor {
@@ -70,4 +70,5 @@ align-self: flex-end;
   padding-left: 50px;
   padding-top: 20px;
   font-style: italic;
+  text-align: center;
 }
