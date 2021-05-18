@@ -96,6 +96,10 @@
   padding-top: 50px;
   border-top: 2px solid $blue;
   margin-bottom: 50px;
+  h2 {
+    color: $blue;
+    text-shadow: 1px 1px 3px #81d8d0;
+  }
 }
 .custom-logo {
   display: flex;
