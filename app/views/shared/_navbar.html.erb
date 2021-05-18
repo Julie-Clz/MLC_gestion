@@ -13,14 +13,20 @@
           <%# <%= link_to "Home", "#", class: "nav-link" %>
         <%# </li> %>
         <li class="nav-item">
-          <%= link_to "Votre devis", new_quotation_path, data: { turbolinks: 'false' }, class: "btn btn-light rounded-pill btn-space reserve" %>
+          <%= link_to "Accueil", root_path, class: "nav-link btn-space" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "A propos", about_path, class: "nav-link btn-space" %>
         </li>
         <li class="nav-item">
           <%= link_to "Nos services", services_path, class: "nav-link btn-space" %>
         </li>
         <li class="nav-item">
-          <%= link_to "A propos", about_path, class: "nav-link btn-space" %>
+          <%= link_to "Demande de devis", new_quotation_path, class: "nav-link btn-space" %>
         </li>
+        <%# <li class="nav-item">
+          <%= link_to "Votre devis", new_quotation_path, data: { turbolinks: 'false' }, class: "btn btn-light rounded-pill btn-space reserve" %>
+        <%#</li> %>
         <li class="nav-item">
           <%= link_to "Contact", contact_path , class: "nav-link btn-space" %>
         </li>
